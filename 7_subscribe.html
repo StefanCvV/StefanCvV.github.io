@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <title>Subscribe</title>
+		<style>
+			h1 {
+				text-align: center;
+			}
+			a {
+				color: #212131;
+				text-decoration: none;
+			}
+			ul.breadcrumb {
+				padding: 10px 16px;
+				list-style: none;
+				background-color: #eee;
+			}
+			ul.breadcrumb li {
+				display: inline;
+				font-size: 18px;
+			}
+			ul.breadcrumb li+li:before {
+				padding: 8px;
+				color: black;
+				content: "/\00a0";
+			}
+			ul.breadcrumb li a {
+				color: #0275d8;
+				text-decoration: none;
+			}
+			ul.breadcrumb li a:hover {
+				color: #01447e;
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<h1 class="col-md-12 col-sm-12">Subscribe bij ons</h1>
+			</div>
+			<div class="row">
+				<ul class="breadcrumb col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+					<li><a href="7_recepts.html">Recept</a></li>
+					<li>Subscribe</li>
+				</ul>
+				<div class="col-md-2 col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<p>Wij danken u voor uw interesse in onze producten en moedigen uw aan om up to date te blijven met onze ontwikkelingen</p>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<h4>Sign up hier</h4>
+					<form>
+						<input placeholder="Naam hier" name="naam" type="text" required>
+						<input placeholder="Abonnement naam hier" name="comment" type="text">
+						<input placeholder="Speciale code" name="secret" type="text">
+						<button type="submit" class="btn btn-primary" value="send">Send in to subscribe</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
