@@ -3,14 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<title>Recept - Stamppot</title>
 		<style>
+			@import url('https://fonts.googleapis.com/css?family=Saira');
+			@import url('https://fonts.googleapis.com/css?family=Monda');
 			h1 {
 				text-align: center;
+				font-family: 'Saira', sans-serif;
+			}
+			h2 {
+				font-family: 'Monda', sans-serif;
 			}
 			a {
 				color: #1920ef;
@@ -78,16 +84,34 @@
 					Menu
 					<ul>
 						<li><a href="https://www.ah.nl/allerhande/recept/R-R7456/klassieke-boerenkoolstamppot" target="_blank">Voor andere variant op dit recept klik hier.</a></li>
-						<li><a href="https://www.facebook.com/" target="_blank">Share to facabook</a></li>
+						<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#share">Share dit recept</button></li>
 				    	<li><a href="7_subscribe.html">Subscribe bij ons om op de hoogte te blijven van nieuwe recepten.</a></li>
 						<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Print recept</button></li>
 					</ul>
+					<div class="modal fade" id="share" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title">Share naar waar?</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<a href="https://www.facebook.com/" target="_blank">Share naar facabook</a><br><br>
+									<a href="https://www.reddit.com/" target="_blank">Share naar reddit</a><br><br>
+									<a href="https://www.linkedin.com/" target="_blank">Share naar linkedin</a>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="modal fade" id="myModal" role="dialog">
 						<div class="modal-dialog modal-lg">
 							<div class="modal-content">
 								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal">&times;</button>
 									<h4 class="modal-title">Printer niet aangesloten</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
 								</div>
 								<div class="modal-body">
 									<p>Sluit een printer aan die verbinding maakt met dit apparaat.</p>
@@ -98,8 +122,9 @@
 							</div>
 						</div>
 					</div>
-					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+					<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 				</div>
 				<div class="col-md-8 col-sm-8">
 					<h2>Bereidingswijze</h2>
@@ -116,8 +141,21 @@
 					Voeg ondertussen de boter en azijn toe aan de stamppot.<br>
 					Breng het eventueel op smaak met zout en peper.<br>
 					Serveer de stamppot.
-					<img src="https://static.ah.nl/static/recepten/img_006188_890x594_JPG.jpg" alt="Pot stamppot">
+					<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="https://static.ah.nl/static/recepten/img_006188_890x594_JPG.jpg" alt="Pot stamppot">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/IMG_0156.jpg" alt="Stamppot in pan">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="https://ohmydish.nl/wp-content/uploads/2016/10/Ouderwetse-boerenkoolstamppot.jpg" alt="Stamppot met worst">
+							</div>
+						</div>
+					</div>
 				</div>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 				<div class="col-md-2 col-sm-2">
 					Ingredienten
 					<ul>
