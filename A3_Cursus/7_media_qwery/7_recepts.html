@@ -30,6 +30,28 @@
 				color: #da2028;
 				text-decoration: underline;
 			}
+			ul.breadcrumb {
+				padding: 10px 16px;
+				list-style: none;
+				background-color: #eee;
+			}
+			ul.breadcrumb li {
+				display: inline;
+				font-size: 18px;
+			}
+			ul.breadcrumb li+li:before {
+				padding: 8px;
+				color: black;
+				content: "/\00a0";
+			}
+			ul.breadcrumb li a {
+				color: #0275d8;
+				text-decoration: none;
+			}
+			ul.breadcrumb li a:hover {
+				color: #01447e;
+				text-decoration: underline;
+			}
 			.col-md-2 {
 				height: auto;
 				padding: 2px;
@@ -54,6 +76,9 @@
 			h4 {
 				margin-top: 20px;
 			}
+			input {
+				margin-top: 6px;
+			}
 			@media screen and (min-width: 40em) /*640px*/ {
 				img {
 					width: 500px;
@@ -73,6 +98,13 @@
 		<div class="container">
 			<div class="row">
 				<h1 class="col-md-12 col-sm-12">Stamppot voor vier personen</h1>
+			</div>
+			<div class="row">
+				<ul class="breadcrumb col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3">
+					<li><a href="https://stefancvv.github.io/index.htm">Home</a></li>
+					<li>Recept</li>
+				</ul>
+				<div class="col-md-3 col-sm-3"></div>
 			</div>
 			<div class="row">
 				<div class="col-md-2 col-sm-3">
