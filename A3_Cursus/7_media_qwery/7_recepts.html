@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<title>Recept - Stamppot</title>
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Saira');
+			@import url('https://fonts.googleapis.com/css?family=Monda');
+			h1 {
+				text-align: center;
+				font-family: 'Saira', sans-serif;
+			}
+			h2 {
+				font-family: 'Monda', sans-serif;
+			}
+			a {
+				color: #1920ef;
+				text-decoration: underline;
+			}
+			a:hover {
+				color: #1920ef;
+				text-decoration: underline;
+			}
+			a:active {
+				color: #da2028;
+				text-decoration: underline;
+			}
+			.col-md-2 {
+				height: auto;
+				padding: 2px;
+				border: 2px solid #555555;
+			}
+			ul {
+				list-style: square;
+			}
+			#nosquare {
+				padding-left: 10px;
+				list-style: none;
+			}
+			.btn-lg {
+				margin: 2px;
+				padding: 2px;
+				font-size: 14px;
+			}
+			img {
+				width: 234px;
+				height: auto;
+			}
+			h4 {
+				margin-top: 20px;
+			}
+			@media screen and (min-width: 40em) /*640px*/ {
+				img {
+					width: 500px;
+				}
+				.col-md-2 {
+					height: 450px;
+				}
+			}
+			@media screen and (min-width: 64em) /*1024px*/ {
+				img {
+					width: 550px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<h1 class="col-md-12 col-sm-12">Stamppot voor vier personen</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-2 col-sm-3">
+					Menu
+					<ul id="nosquare">
+						<li><a href="https://www.ah.nl/allerhande/recept/R-R7456/klassieke-boerenkoolstamppot" target="_blank">Voor andere variant op dit recept klik hier.</a></li>
+						<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#share">Share dit recept</button></li>
+				    	<li><a href="7_subscribe.html">Subscribe bij ons om op de hoogte te blijven van nieuwe recepten.</a></li>
+						<li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Print recept</button></li>
+					</ul>
+					<div class="modal fade" id="share" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title">Share naar waar?</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<a href="https://www.facebook.com/" target="_blank">Share naar facabook</a><br><br>
+									<a href="https://www.reddit.com/" target="_blank">Share naar reddit</a><br><br>
+									<a href="https://www.linkedin.com/" target="_blank">Share naar linkedin</a>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal fade" id="myModal" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4 class="modal-title">Printer niet aangesloten</h4>
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+								</div>
+								<div class="modal-body">
+									<p>Sluit een printer aan die verbinding maakt met dit apparaat.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+				</div>
+				<div class="col-md-8 col-sm-6">
+					<h2>Bereidingswijze</h2>
+					Schil de aardappelen en snij ze in stukken.<br>
+					Was de aardappelen en de boerenkool met water.<br><br>
+					Doe de aardappelen in een grote pan met water, er moet genoeg water in de pan zitten zodat iedere aardappel net onder water zit.<br>
+					Breng het water aan de kook en kook de worst mee.<br>
+					Kook de aadappelen tot ze gaar zijn.(ongeveer 25 minuten)<br>
+					Ondertussen kan de boerenkool ook aan de kook, ongeveer 25 minuten.<br><br>
+					Als de aardappelen koken haal ze van het vuur en haal de worst uit de pan en snijd deze in plakjes.<br>
+					Giet de aardappelen af en wacht tot de boerenkool ook klaar is.<br>
+					Als de boerenkool ook klaar is giet deze dan ook af.<br><br>
+					Doe de boerenkool in de zelfde pan als de aardappelen en stamp het goed door elkaar.<br>
+					Voeg ondertussen de boter en azijn toe aan de stamppot.<br>
+					Breng het eventueel op smaak met zout en peper.<br>
+					Serveer de stamppot.
+					<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="https://static.ah.nl/static/recepten/img_006188_890x594_JPG.jpg" alt="Pot stamppot">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="https://www.lekkerensimpel.com/wp-content/uploads/2016/10/IMG_0156.jpg" alt="Stamppot in pan">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="https://ohmydish.nl/wp-content/uploads/2016/10/Ouderwetse-boerenkoolstamppot.jpg" alt="Stamppot met worst">
+							</div>
+						</div>
+					</div>
+				</div>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+				<div class="col-md-2 col-sm-3">
+					Ingredienten
+					<ul>
+						<li>1 kg aardappelen</li>
+						<li>600 g boerenkool</li>
+						<li>Ongeveer 250 g rookworst</li>
+						<li>25 g ongezouten roomboter</li>
+						<li>Een eetlepel azijn</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2 form-group">
+					<h4>Hebt u klachten? laat het ons weten.</h4>
+					<form>
+						<input class="form-control" placeholder="Naam hier" name="naam" type="text">
+						<input class="form-control" placeholder="Uw klacht hier" name="comment" type="text">
+						<input class="btn btn-primary" type="submit" value="Send in complaint">
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
