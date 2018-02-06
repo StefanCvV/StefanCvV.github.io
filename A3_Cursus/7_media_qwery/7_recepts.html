@@ -69,6 +69,9 @@
 				padding: 2px;
 				font-size: 14px;
 			}
+			p {
+				font-family: sylfaen;
+			}
 			img {
 				width: 234px;
 				height: auto;
@@ -155,7 +158,7 @@
 				</div>
 				<div class="col-md-8 col-sm-6">
 					<h2>Bereidingswijze</h2>
-					Schil de aardappelen en snij ze in stukken.<br>
+					<p>Schil de aardappelen en snij ze in stukken.<br>
 					Was de aardappelen en de boerenkool met water.<br><br>
 					Doe de aardappelen in een grote pan met water, er moet genoeg water in de pan zitten zodat iedere aardappel net onder water zit.<br>
 					Breng het water aan de kook en kook de worst mee.<br>
@@ -167,7 +170,7 @@
 					Doe de boerenkool in de zelfde pan als de aardappelen en stamp het goed door elkaar.<br>
 					Voeg ondertussen de boter en azijn toe aan de stamppot.<br>
 					Breng het eventueel op smaak met zout en peper.<br>
-					Serveer de stamppot.
+					Serveer de stamppot.</p>
 					<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
@@ -198,8 +201,10 @@
 				<div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2 form-group">
 					<h4>Hebt u klachten? laat het ons weten.</h4>
 					<form>
-						<input class="form-control" placeholder="Naam hier" name="naam" type="text">
-						<input class="form-control" placeholder="Uw klacht hier" name="comment" type="text">
+						<label for="formnaam">Vul hier uw naam in</label>
+						<input class="form-control" placeholder="Naam hier" name="naam" id="formnaam" type="text">
+						<label for="textklacht">Beschrijf uw probleem</label>
+						<textarea class="form-control" placeholder="Uw klacht hier" name="comment" id="textklacht" type="text"></textarea>
 						<input class="btn btn-primary" type="submit" value="Send in complaint">
 					</form>
 				</div>
