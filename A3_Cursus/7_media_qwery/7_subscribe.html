@@ -50,6 +50,7 @@
 			</div>
 			<div class="row">
 				<ul class="breadcrumb col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+					<li><a href="https://stefancvv.github.io/index.htm">Home</a></li>
 					<li><a href="7_recepts.html">Recept</a></li>
 					<li>Subscribe</li>
 				</ul>
@@ -62,8 +63,11 @@
 				<div class="col-md-6 col-sm-12">
 					<h4>Sign up hier</h4>
 					<form>
-						<input placeholder="Naam hier" name="naam" type="text" required>
-						<input placeholder="Abonnement naam hier" name="comment" type="text">
+						<label for="formnaam">Vul uw naam in.</label>
+						<input placeholder="Naam hier" class="form-control" name="naam" id="formnaam" type="text" required>
+						<label for="formab">Vul uw abonement in.</label>
+						<input placeholder="Abonnement naam hier" class="form-control" id="formab" name="abonemment" type="text">
+						<label for="formab">Vul uw code in.(niet verplicht)</label>
 						<input placeholder="Speciale code" name="secret" type="text">
 						<button type="submit" class="btn btn-primary" value="send">Send in to subscribe</button>
 					</form>
