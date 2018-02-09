@@ -8,6 +8,53 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css?family=Saira');
 			@import url('https://fonts.googleapis.com/css?family=Monda');
+			nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				border: 1px solid #e7e7e7;
+				background-color: #f3f3f3;
+			}
+			nav ul li {
+				float: left;
+			}
+			nav ul li a {
+				display: block;
+				color: #666;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			nav ul li a:hover:not(.active) {
+				background-color: #ddd;
+			}
+			nav ul li a.active {
+				color: white;
+				background-color: #4CAF50;
+			}
+			nav ul li input[type=text] {
+				float: right;
+				margin-left: 25px;
+				margin-top: 8px;
+				margin-right: 16px;
+				padding: 6px;
+				border: none;
+				font-size: 17px;
+			}
+			nav ul li button {
+				float: right;
+				padding: 6px 10px;
+				margin-top: 8px;
+				margin-right: 16px;
+				background: #ddd;
+				font-size: 17px;
+				border: none;
+				cursor: pointer;
+			}
+			nav ul li button:hover {
+				background: #ccc;
+			}
 			h1 {
 				text-align: center;
 				font-family: 'Saira', sans-serif;
@@ -45,6 +92,14 @@
 	</head>
 	<body>
 		<div class="container">
+			<nav>
+				<ul>
+					<li><a href="https://stefancvv.github.io/index.htm">Home</a></li>
+					<li><a class="active" href="7_recepts.html">Recept</a></li>
+					<li><input type="text" placeholder="Search.."></li>
+					<li><button type="submit"><i class="fa fa-search"></i></button></li>
+				</ul>
+			</nav>
 			<div class="row">
 				<h1 class="col-md-12 col-sm-12">Subscribe bij ons</h1>
 			</div>
