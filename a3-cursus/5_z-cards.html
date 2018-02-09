@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Overlay</title>
+		<meta charset="utf-8">
+		<style>
+			 .container{
+				height: 900px
+			}
+			 .container div{
+				width: 200px;
+				height: 200px;
+				border: 0px solid #1232ef;
+				color: #dedede;
+				font-family: sans-serif;
+				font-weight: bold;
+				text-align: center;
+			}
+			#diam {
+				position: fixed;
+				background-color: #da3245;
+				z-index: 1;
+			}
+			#clubs {
+				background-color: #da72a5;
+				margin-left: 200px;
+			}
+			#spade {
+				position: absolute;
+				top: 100px;
+				left: 100px;
+				background-color: #122232;
+				z-index: 3;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container"><!--page about fav movie, bootstrap grid & use bootstrap dialog to open a photo(google it)-->
+			<div id="diam">Diamonds</div>
+			<div id="clubs">Clubs</div>
+			<div id="spade">Spades</div>
+		</div>
+	</body>
+</html>
