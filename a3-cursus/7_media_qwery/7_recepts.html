@@ -11,6 +11,9 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css?family=Saira');
 			@import url('https://fonts.googleapis.com/css?family=Monda');
+			.container-fluid {
+				max-width: 1100px;
+			}
 			nav ul {
 				list-style-type: none;
 				margin: 0;
@@ -280,7 +283,7 @@
 			<div class="row">
 				<div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2 form-group">
 					<h4>Hebt u klachten? laat het ons weten.</h4>
-					<form>
+					<form method="post">
 						<label for="formnaam">Vul hier uw naam in</label>
 						<input class="form-control" placeholder="Naam hier" name="naam" id="formnaam" type="text">
 						<label for="textklacht">Beschrijf uw probleem</label>
